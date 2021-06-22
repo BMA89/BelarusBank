@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="2dp">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="85dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/belarusbank_new_1" />
+        <TextView
+            android:id="@+id/usd_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс покупки USD"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/usd_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс продажи USD"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:layout_below="@+id/usd_in"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/eur_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курс покупки EUR"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:layout_below="@+id/usd_out"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/eur_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageLogo"
+            android:layout_below="@+id/eur_in"
+            android:text="Курс продажи EUR"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/usd_in"
+            android:layout_marginLeft="8dp"
+            android:text="USD_in"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_marginLeft="8dp"
+            android:text="USD_out"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text1"
+            android:layout_toEndOf="@+id/usd_out"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text3"
+            android:layout_marginLeft="8dp"
+            android:text="EUR_in"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text2"
+            android:layout_toEndOf="@+id/eur_in"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text4"
+            android:layout_marginLeft="8dp"
+            android:text="EUR_in"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text3"
+            android:layout_toEndOf="@+id/eur_out"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text5"
+            android:text="Filial"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text4"
+            android:layout_toEndOf="@+id/imageLogo"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
